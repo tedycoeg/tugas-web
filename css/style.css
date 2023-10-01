@@ -7,6 +7,8 @@
   --light-one: #fff;
   --light-two: #f9fafb;
   --light-three: #f6f7fb;
+
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 /* Genral Styles */
@@ -223,6 +225,16 @@ header {
   background-color: var(--light-three);
   overflow: hidden;
   position: relative;
+}
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(241, 240, 240);
+  z-index: 1000;
+  box-shadow: var(--light-shadow);
+  transition: all 0.3s ease;
 }
 
 nav {
